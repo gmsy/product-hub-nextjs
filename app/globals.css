@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 248, 250, 252;
+  --primary-color: 14, 165, 233;
+  --card-bg: 255, 255, 255;
+  --header-bg: 255, 255, 255;
+  --border-color: 226, 232, 240;
+  --text-primary: 15, 23, 42;
+  --text-secondary: 100, 116, 139;
+  --footer-bg: 248, 250, 252;
+  --hover-bg: 240, 249, 255;
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39;
+  --card-bg: 31, 41, 55;
+  --header-bg: 31, 41, 55;
+  --border-color: 55, 65, 81;
+  --text-primary: 243, 244, 246;
+  --text-secondary: 209, 213, 219;
+  --footer-bg: 17, 24, 39;
+  --hover-bg: 55, 65, 81;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  }
+}
